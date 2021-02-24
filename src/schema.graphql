@@ -1,0 +1,30 @@
+
+type Query {
+    info: String!
+    feed: [Form!]!
+  
+  }
+
+
+  type Mutation {
+      post(
+         name: String!
+          phone: String!
+          company: String!
+          message: String!
+          email: String!
+
+      ): Form!
+      
+    } 
+
+  type Form {
+     id: ID!
+     name: String!
+    phone: String!
+    company: String!
+    message: String!
+    email: String!
+  }
+
+
